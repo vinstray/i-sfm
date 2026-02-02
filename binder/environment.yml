@@ -1,15 +1,15 @@
 name: sfm
 channels:
-  - https://repo.anaconda.com/pkgs/main
-  - https://repo.anaconda.com/pkgs/r
+  - conda-forge
 dependencies:
-  - matplotlib
-  - numpy
-  - opencv
   - python=3.10
-  - requests
+  - numpy
   - scipy
+  - matplotlib
+  - opencv
+  - open3d
+  - imageio
+  - requests
   - tqdm
   - ipykernel
   - pyyaml
-prefix: /home/zaar/anaconda3/envs/sfm
