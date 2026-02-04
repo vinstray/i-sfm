@@ -2,7 +2,7 @@
   "name": "i-sfm (conda)",
   "image": "mcr.microsoft.com/devcontainers/miniconda:0-3",
   "features": {},
-  "postCreateCommand": "conda env update -n base -f environment.yml && python -m pip install -U pip",
+  "postCreateCommand": "conda env update -f environment.yml || conda env create -f environment.yml; conda run -n sfm python -m ipykernel install --user --name sfm --display-name \"Python (sfm)\";conda run -n sfm python -m pip install -U pip",
   "customizations": {
     "vscode": {
       "extensions": [
