@@ -1,0 +1,14 @@
+{
+  "name": "i-sfm (conda)",
+  "image": "mcr.microsoft.com/devcontainers/miniconda:0-3",
+  "features": {},
+  "postCreateCommand": "conda env update -n base -f environment.yml && python -m pip install -U pip",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+      ]
+    }
+  }
+}
