@@ -13,3 +13,4 @@ dependencies:
   - tqdm
   - ipykernel
   - pyyaml
+  - ipywidgets
